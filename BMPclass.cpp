@@ -139,9 +139,9 @@ void ImageBMP::GaussFilter(int R)
                 }
             }
             // присваивем значение
-            Image[i][j].R = unsigned char(valueR / (sqrt(2 * PI) * R));
-            Image[i][j].G = unsigned char(valueG / (sqrt(2 * PI) * R));
-            Image[i][j].B = unsigned char(valueB / (sqrt(2 * PI) * R));
+            Image[i][j].R = (unsigned char)(valueR / (sqrt(2 * PI) * R));
+            Image[i][j].G = (unsigned char)(valueG / (sqrt(2 * PI) * R));
+            Image[i][j].B = (unsigned char)(valueB / (sqrt(2 * PI) * R));
         } 
     }
 
@@ -203,9 +203,9 @@ void ImageBMP::GaussFilter(int R)
                 }
             }
             // присваивем значение
-            Image[i][j].R = unsigned char(valueR / (sqrt(2 * PI) * R));
-            Image[i][j].G = unsigned char(valueG / (sqrt(2 * PI) * R));
-            Image[i][j].B = unsigned char(valueB / (sqrt(2 * PI) * R));
+            Image[i][j].R = (unsigned char)(valueR / (sqrt(2 * PI) * R));
+            Image[i][j].G = (unsigned char)(valueG / (sqrt(2 * PI) * R));
+            Image[i][j].B = (unsigned char)(valueB / (sqrt(2 * PI) * R));
 
         }
     }
